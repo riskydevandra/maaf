@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>maaf</title>
+  </head>
+  <body>
+    <h1>maaf HAN</h1>
+    <img src="https://c.tenor.com/hJXFp0r00AoAAAAC/kiki-sad.gif" alt="" />
+    <h1>kamu mau gak maafin aku?</h1>
+    <button id="btn_mau" onclick="alert('Makasih Han,I love You')">Mau</button>
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">Gamau</button>
+    <script>
+      function gamau(id) {
+        var mau = document.getElementById("btn_mau");
+        var i = Math.floor(Math.random() * 300 + 1);
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+      }
+    </script>
+  </body>
+</html>
